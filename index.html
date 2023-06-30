@@ -7,6 +7,7 @@
     <title>gallery</title>
     <link rel="stylesheet" href="gallery.css"/>
     <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://kit.fontawesome.com/9339802a43.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -19,79 +20,80 @@
         <a href="#contact">Contact</a>
         <input class="check" type="checkbox" id="color-switch">
         <label id="switch" for="color-switch"> 
-          <div class="switch"> </div> 
-        
+          <div class="switch">
+            DarkMode: <span id="off"> Off</span>
+          </div> 
         </label> 
         
       </div>
       <!-- THIS IS FIXED NAV BAR-->
-      <nav id="navbar"> 
-        <div class="navbar">
-            <a href=""> NOMAN</a>
-            <p class="bttn" style="font-size:30px;cursor:pointer;color:#b8c1ec" onclick="openNav()">&#9776;</p>
-        </div>
+      <nav id="navbar" class="navbar"> 
+        <a href=""> ALLY.<span>ROLLS </span></a>
+        <p class="bttn" onclick="openNav()">&#9776;</p>
       </nav>
+
       <!--MAIN PAGE FOR GALLERGY-->
       <header class="hero-image">
         <div class="text">
-          <h1> Gudak Collections </h1>
-          <p> This is my collection of gudak photos. Feel free to browrse. Enjoy!</p>
+          <h1 style="font-family: 'Mulish' sans-serif;"> Gudak Collections </h1>
+          <p style="font-size: 16px;"> 
+            Welcome to my Gudak Photo Collection!. It's an analog camera app like disposable camera. It can capture 24 shots, and developed within 2 days. Here's my shots since 2019.</p>
         </div>
       </header>
           <h2 id="gallery" class="gal"> GALLERY </h2> 
 
           <div class="gallery">
-              <img src="img/img1.jpg" width="100%" class="item">
-              <img src="img/img9.jpg" width="100%" class="item">
-              <img src="img/img3.jpg" width="100%" class="item">
-              <img src="img/img4.jpg" width="100%" class="item">
-              <img src="img/img5.jpg" width="100%" class="item">
-              <img src="img/img6.jpg" width="100%" class="item">
-              <img src="img/img7.jpg" width="100%" class="item">
-              <img src="img/img8.jpg" width="100%" class="item">
-              <img src="img/img2.jpg" width="100%" class="item">
-              <img src="img/img10.jpg" width="100%" class="item">
-              <img src="img/img11.jpg" width="100%" class="item">
-              <img src="img/img12.jpg" width="100%" class="item">
-              <img src="img/img13.jpg" width="100%" class="item">
-              <img src="img/img14.jpg" width="100%" class="item">
-              <img src="img/img15.jpg" width="100%" class="item">
-              <img src="img/img16.jpg" width="100%" class="item">
-              <img src="img/img17.jpg" width="100%" class="item">
-              <img src="img/img18.jpg" width="100%" class="item">
-              <img src="img/img19.jpg" width="100%" class="item">
-              <img src="img/img20.jpg" width="100%" class="item">
-              <img src="img/img21.jpg" width="100%" class="item">
+              <img data-aos="fade-up" data-aos-anchor-placement="top-center" src="img/img1.jpg" width="100%" class="item">
+              <img data-aos="fade-up" data-aos-anchor-placement="top-center" src="img/img9.jpg" width="100%" class="item">
+              <img data-aos="fade-up" data-aos-anchor-placement="top-center" src="img/img3.jpg" width="100%" class="item">
+              <img data-aos="fade-up" data-aos-anchor-placement="top-center" src="img/img4.jpg" width="100%" class="item">
+              <img data-aos="fade-up" data-aos-anchor-placement="top-center" src="img/img5.jpg" width="100%" class="item">
+              <img data-aos="fade-up" data-aos-anchor-placement="top-center" src="img/img6.jpg" width="100%" class="item">
+              <img data-aos="fade-up" data-aos-anchor-placement="top-center" src="img/img7.jpg" width="100%" class="item">
+              <img data-aos="fade-up" data-aos-anchor-placement="top-center" src="img/img8.jpg" width="100%" class="item">
+              <img data-aos="fade-up" data-aos-anchor-placement="top-center" src="img/img2.jpg" width="100%" class="item">
+              <img data-aos="fade-up" data-aos-anchor-placement="top-center" src="img/img10.jpg" width="100%" class="item">
+              <img data-aos="fade-up" data-aos-anchor-placement="top-center" src="img/img11.jpg" width="100%" class="item">
+              <img data-aos="fade-up" data-aos-anchor-placement="top-center" src="img/img12.jpg" width="100%" class="item">
+              <img data-aos="fade-up" data-aos-anchor-placement="top-center" src="img/img13.jpg" width="100%" class="item">
+              <img data-aos="fade-up" data-aos-anchor-placement="top-center" src="img/img14.jpg" width="100%" class="item">
+              <img data-aos="fade-up" data-aos-anchor-placement="top-center" src="img/img15.jpg" width="100%" class="item">
+              <img data-aos="fade-up" data-aos-anchor-placement="top-center" src="img/img16.jpg" width="100%" class="item">
+              <img data-aos="fade-up" data-aos-anchor-placement="top-center" src="img/img17.jpg" width="100%" class="item">
+              <img data-aos="fade-up" data-aos-anchor-placement="top-center" src="img/img18.jpg" width="100%" class="item">
+              <img data-aos="fade-up" data-aos-anchor-placement="top-center" src="img/img19.jpg" width="100%" class="item">
+              <img data-aos="fade-up" data-aos-anchor-placement="top-center" src="img/img20.jpg" width="100%" class="item">
+              <img data-aos="fade-up" data-aos-anchor-placement="top-center" src="img/img21.jpg" width="100%" class="item">
               
 
           </div> 
           <h2  id="download" class="gal"> Download</h2> 
-          <p class="download"> 
-            <a href="https://play.google.com/store/apps/details?id=com.screwbar.gudakcamera&hl=en_US&gl=US&pli=1"> 
-            <img src= "img/gudak.png" style="width:170px;"> </a></p>
-          <footer id="contact" class="footer">
-            <div class="content">
-                <div class="first"> 
-                <div class="pconnect">Stay connected!</div>
-                <form>
-                <input class="email" type="text" placeholder="Email"> 
-                <input class="button" type="submit" value="Send">
-                </form>
-                  <div class="socmed">
-                    <a href="https://www.facebook.com/allysonkayeT/" target="_blank"><i class="fa-brands fa-facebook fa-2x"></i></a>
-                    <a href="https://www.instagram.com/ally.kyy/?hl=en" target="_blank"> <i class="fa-brands fa-instagram fa-2x"></i></a>
-                    <a href="https://twitter.com/alihkey" target="_blank"> <i class="fa-brands fa-twitter fa-2x"></i></i></a>
-                    <a href="https://github.com/allysonkaye" target="_blank"> <i class="fa-brands fa-github fa-2x"></i></a>
-                   
-                  </div>
-              </div>
-            </footer>
-            
-          
+          <div class="download"> 
+            <div>
+              <img src= "img/gudak.png" style="width:170px;"> </a>
+            </div>
+            <div class="appDesc">
+              <p> Gudak is available both <span class="app"> <a href="https://play.google.com/store/apps/details?id=com.screwbar.gudakcamera&hl=en_US&gl=US&pli=1"> Play Store</a></span> and 
+                <span class="app"><a href="https://apps.apple.com/us/app/gudak-cam/id1237692856">Apple Store</a></span> for only <span style="font-weight: bold;"> $0.99</span>  only! 
+              </p>
+            </div>
           </div>
           
-
-
+          <footer id="contact" class="footer">
+            <div class="first"> 
+              <div class="pconnect">
+                @ 2022-2023 Allyson Kaye Timpug.
+              </div>
+              <div class="socmed">
+                <a href="https://www.facebook.com/allysonkayeT/" target="_blank"><i class="fa-brands fa-facebook fa-2x"></i></a>
+                <a href="https://www.instagram.com/ally.rolls/?hl=en" target="_blank"> <i class="fa-brands fa-instagram fa-2x"></i></a>
+                <a href="https://github.com/allysonkaye" target="_blank"> <i class="fa-brands fa-github fa-2x"></i></a>
+              </div>
+          </footer>
+  <script src="gallery.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+   AOS.init();
+  </script>
 </body>
-<script src="gallery.js"></script>
 </html>
